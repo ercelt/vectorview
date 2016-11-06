@@ -1,0 +1,25 @@
+html
+    head
+        title "Vector Viewer"
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0")
+    body
+        link(rel="stylesheet" type="text/css" href="style.css")
+        script(src="http://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.js")
+        script(src="js/three.js/examples/js/Detector.js")
+        script(src="js/three.js/examples/js/controls/orbitcontrols.js")
+        script(src="js/threex/threex.windowresize.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/js-signals/1.0.0/js-signals.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/crossroads/0.12.2/crossroads.js")
+        div(id="flexbox")
+            div(id="left_col")
+                div(id="inputForm")
+                    textarea(id="textInput" class="col_element")
+                    button(type="button" id="plotButton" onclick="parseAndPlot()" class="col_element") Plot
+                div(id="pointsList")
+                    div(name="point")
+                        <label name="nameLabel" onclick="" class="toggle-btn"></label>
+                        <label name="pointLabel" class="pointLabel"></label>
+            div(id="viewport")
+        script(src="js/render3d.js")
