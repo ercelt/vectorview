@@ -4,6 +4,6 @@
 [submodule "threex"]
 	path = public/js/threex
 	url = https://github.com/jeromeetienne/threex/
-[submoduel "threex.windowresize"]
+[submodule "threex.windowresize"]
 	path = public/js/threex.windowresize
 	url = https://github.com/jeromeetienne/threex.windowresize/
